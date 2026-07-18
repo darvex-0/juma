@@ -25,7 +25,7 @@ export function CivicImpact() {
   ];
 
   return (
-    <section ref={containerRef} className="py-20 md:py-32 lg:py-40 bg-parchment-alt bg-pattern-islamic text-navy overflow-hidden relative">
+    <section id="community" ref={containerRef} className="py-20 md:py-32 lg:py-40 bg-parchment-alt bg-pattern-islamic text-navy overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 md:px-8 xl:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
           

@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export function DepartmentShowcase() {
   return (
-    <section className="py-20 md:py-32 bg-navy bg-pattern-islamic-light text-parchment overflow-hidden px-4 md:px-8 lg:px-12 border-t border-gold/10 relative">
+    <section id="academy" className="py-20 md:py-32 bg-navy bg-pattern-islamic-light text-parchment overflow-hidden px-4 md:px-8 lg:px-12 border-t border-gold/10 relative">
       <div className="absolute inset-0 bg-navy/80"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         

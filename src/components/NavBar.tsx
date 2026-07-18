@@ -15,10 +15,19 @@ export function NavBar() {
   }, []);
 
   const navLinks = [
-    { name: 'Heritage', href: '#' },
-    { name: 'Academy', href: '#' },
-    { name: 'Community', href: '#' },
+    { name: 'Heritage', href: '#heritage' },
+    { name: 'Academy', href: '#academy' },
+    { name: 'Community', href: '#community' },
   ];
+
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }
+  };
 
   return (
     <motion.nav 
@@ -48,6 +57,7 @@ export function NavBar() {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleScrollTo(e, link.href)}
                 className="text-xs font-semibold text-navy/70 hover:text-gold transition-colors tracking-[0.2em] uppercase"
               >
                 {link.name}
@@ -78,6 +88,7 @@ export function NavBar() {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => handleScrollTo(e, link.href)}
                 className="block text-sm font-semibold text-navy hover:text-gold transition-colors tracking-[0.2em] uppercase border-b border-navy/5 pb-4"
               >
                 {link.name}
