@@ -1,0 +1,10 @@
+{
+  "name": "Jamia Masjid & Cultural Academy",
+  "description": "Prestigious institutional portal documenting the mosque's heritage, scholars, curriculum, and civic facilities.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
