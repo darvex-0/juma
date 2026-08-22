@@ -5,6 +5,7 @@ import { HeroSection } from './components/HeroSection';
 import { DepartmentShowcase } from './components/DepartmentShowcase';
 import { CivicImpact } from './components/CivicImpact';
 import { HistoryTimeline } from './components/HistoryTimeline';
+import { Scholars } from './components/Scholars';
 
 export default function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ export default function App() {
       <main className="flex-grow">
         <HeroSection />
         <DepartmentShowcase />
+        <Scholars />
         <CivicImpact />
         <HistoryTimeline />
       </main>

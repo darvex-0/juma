@@ -17,6 +17,7 @@ export function NavBar() {
   const navLinks = [
     { name: 'Heritage', href: '#heritage' },
     { name: 'Academy', href: '#academy' },
+    { name: 'Scholars', href: '#scholars' },
     { name: 'Community', href: '#community' },
   ];
 
